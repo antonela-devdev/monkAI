@@ -15,6 +15,14 @@
     --color-text-muted: #6c757d;
 }
 
+body.dark-mode {
+    --color-white: #1a1a1a;
+    --color-dark: #f0f0f0;
+    --color-bg-light: #121212;
+    --color-text-muted: #a0a0a0;
+    /* Adjust other colors if needed for dark mode contrast */
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     color: var(--color-dark);
@@ -791,6 +799,19 @@ body {
     background-color: #25D366;
 }
 
+.theme-toggle-btn {
+    bottom: 30px;
+    right: 100px;
+    /* Positioned to the left of the WhatsApp button */
+    background-color: var(--color-dark);
+    color: var(--color-bg-light);
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
 .back-to-top {
     bottom: 30px;
     left: 30px;
@@ -798,6 +819,95 @@ body {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
+}
+
+/* --- Dark Mode Refinements --- */
+body.dark-mode .navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .navbar-light .navbar-nav .nav-link:hover,
+body.dark-mode .navbar-light .navbar-nav .nav-link.active {
+    color: var(--color-primary);
+}
+
+body.dark-mode .navbar-brand span {
+    color: #ffffff !important;
+}
+
+body.dark-mode .navbar-toggler {
+    filter: invert(1);
+}
+
+/* About Us Cards */
+body.dark-mode .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .glass-card-featured {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .glass-card p,
+body.dark-mode .glass-card-featured p {
+    color: #d0d0d0 !important;
+}
+
+body.dark-mode .glass-card b,
+body.dark-mode .glass-card-featured b {
+    color: #ffffff;
+}
+
+/* Bento Grid */
+body.dark-mode .bento-item.bg-white {
+    background-color: #1e1e1e !important;
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Services Cards */
+body.dark-mode .card-white {
+    background-color: #1e1e1e;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+}
+
+body.dark-mode .service-card-modern p.text-muted {
+    color: #a0a0a0 !important;
+}
+
+/* Custom Solutions Card */
+body.dark-mode .bg-dark {
+    background-color: #050505 !important;
+    /* Very dark */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Footer Fix */
+body.dark-mode #contact {
+    background-color: #000000 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Bento Grid - Design Card Fix */
+body.dark-mode .item-2 {
+    background: linear-gradient(135deg, #1a1a1a, #0f0f0f) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .item-2 i {
+    color: var(--color-accent) !important;
 }
 
 .back-to-top.show {
