@@ -20,7 +20,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="logo.png" alt="Monkai Logo" height="40" class="me-2 rounded-3">
-                <span class="fw-bold text-dark-blue">MonkAI Startup</span>
+                <span class="fw-bold text-dark-blue">MonkAI</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
     <section id="home" class="d-flex align-items-center min-vh-100 position-relative overflow-hidden">
         <div class="container text-center position-relative z-1">
             <h1 class="display-3 fw-bold mb-3 text-dark-blue animate-up">MonkAI Startup</h1>
-            <h2 class="h2 mb-4 text-primary animate-up delay-100">Web Development</h2>
+            <h2 class="h2 mb-4 text-primary animate-up delay-100">Desarrolladores Web</h2>
             <h4 class="h4 lead mb-5 text-muted animate-up delay-200">Soluciones rápidas para uso personal, profesional y empresarial.</h4>
             <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-5 animate-up delay-300 shadow-sm">Contáctanos</a>
         </div>
@@ -67,12 +67,23 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 animate-left">
                     <span class="badge bg-light text-primary rounded-pill px-3 py-2 mb-3 shadow-sm">
-                        <i class="bi bi-rocket-takeoff me-2"></i>MonkAI Startup
+                        <i class="bi bi-rocket-takeoff me-2"></i>MonkAI
                     </span>
                     <h2 class="display-4 fw-bold text-dark-blue mb-4 lh-1">Sobre Nosotros</h2>
-                    <div class="p-5 glass-card rounded-4 mb-4">
-                        <p class="lead text-muted mb-3">En MonkAI Startup, nos dedicamos a transformar ideas en <b>realidad digital.</b> Somos expertos en desarrollo web, ofreciendo soluciones que combinan estética moderna con funcionalidad.</p>
-                        <p class="text-muted mb-0">Nuestro enfoque minimalista asegura que tu mensaje llegue <b>claro y directo,</b> sin distracciones innecesarias, pero con el <b>impacto visual</b> que tu marca merece.</p>
+                    <div class="p-5 glass-card glass-card-featured rounded-4 mb-4 position-relative overflow-hidden">
+                        <div class="position-relative z-2">
+                            <p class="lead text-muted mb-3">En MonkAI nos dedicamos a transformar ideas en <b>realidad digital.</b> Somos expertos en desarrollo web, ofreciendo soluciones que combinan estética moderna con funcionalidad.</p>
+                            
+                            <div id="about-more-text" class="collapse">
+                                <p class="text-muted mb-0">Nuestro enfoque minimalista asegura que tu mensaje llegue <b>claro y directo,</b> sin distracciones innecesarias, pero con el <b>impacto visual</b> que tu marca merece.</p>
+                            </div>
+                            
+                            <button id="read-more-btn" class="btn btn-link p-0 mt-2 text-primary fw-bold text-decoration-none d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#about-more-text" aria-expanded="false" aria-controls="about-more-text">
+                                <span>Leer más</span> <i class="bi bi-chevron-down ms-2 transition-icon"></i>
+                            </button>
+                        </div>
+                        <!-- Decorative blob for the card -->
+                        <div class="blob-decoration blob-card-about"></div>
                     </div>
                 </div>
                 <div class="col-lg-6 animate-right">
@@ -107,26 +118,26 @@
             </div>
 
             <div class="row g-4 align-items-stretch">
-                <!-- Service 1: Personal (Dark Blue) -->
+                <!-- Service 1: Personal (Red Accent) -->
                 <div class="col-lg-4 animate-up delay-100">
-                    <div class="service-card-modern card-dark-blue h-100 p-5 rounded-5 position-relative overflow-hidden text-white d-flex flex-column">
+                    <div class="service-card-modern card-white h-100 p-5 rounded-5 position-relative overflow-hidden text-dark-blue shadow-lg border-0 d-flex flex-column">
                         <div class="position-relative z-2 flex-grow-1 d-flex flex-column">
-                            <div class="icon-box-xl bg-white-10 rounded-4 mb-4 backdrop-blur">
+                            <div class="icon-box-xl bg-secondary-subtle text-secondary-custom rounded-4 mb-4">
                                 <i class="bi bi-person-bounding-box fs-1"></i>
                             </div>
                             <h3 class="fw-bold mb-3">Marca Personal</h3>
-                            <p class="opacity-75 mb-4 lead">Destaca tu perfil profesional con una web única.</p>
+                            <p class="text-muted mb-4 lead">Destaca tu perfil profesional con una web única.</p>
                             
                             <ul class="list-unstyled mb-5 flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Portafolios de Alto Impacto</li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>CVs Interactivos</li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Blogs & Artículos</li>
-                                <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Enlaces para Redes</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-secondary-custom fs-5"></i>Portafolios de Alto Impacto</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-secondary-custom fs-5"></i>CVs Interactivos</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-secondary-custom fs-5"></i>Blogs & Artículos</li>
+                                <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-secondary-custom fs-5"></i>Enlaces para Redes</li>
                             </ul>
                             
-                            <a href="#contact" class="btn btn-outline-light w-100 rounded-pill fw-bold py-3 mt-auto">Empezar Ahora</a>
+                            <a href="#contact" class="btn btn-secondary-custom w-100 rounded-pill fw-bold py-3 mt-auto shadow-sm">Empezar Ahora</a>
                         </div>
-                        <div class="blob-decoration blob-light-blue"></div>
+                        <div class="blob-decoration blob-red"></div>
                     </div>
                 </div>
 
@@ -156,26 +167,26 @@
                     </div>
                 </div>
 
-                <!-- Service 3: Events (Light Blue) -->
+                <!-- Service 3: Events (Gold Accent) -->
                 <div class="col-lg-4 animate-up delay-300">
-                    <div class="service-card-modern card-light-blue h-100 p-5 rounded-5 position-relative overflow-hidden text-white d-flex flex-column">
+                    <div class="service-card-modern card-white h-100 p-5 rounded-5 position-relative overflow-hidden text-dark-blue shadow-lg border-0 d-flex flex-column">
                         <div class="position-relative z-2 flex-grow-1 d-flex flex-column">
-                            <div class="icon-box-xl bg-white-20 rounded-4 mb-4 backdrop-blur">
+                            <div class="icon-box-xl bg-accent-subtle text-info rounded-4 mb-4">
                                 <i class="bi bi-calendar-heart-fill fs-1"></i>
                             </div>
                             <h3 class="fw-bold mb-3">Eventos & Social</h3>
-                            <p class="opacity-75 mb-4 lead">Invitaciones que emocionan y conectan.</p>
+                            <p class="text-muted mb-4 lead">Invitaciones que emocionan y conectan.</p>
                             
                             <ul class="list-unstyled mb-5 flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Invitaciones Digitales</li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Confirmación de Asistencia</li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Cuenta Regresiva & Mapas</li>
-                                <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 opacity-75 fs-5"></i>Carrusel de fotos</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-info fs-5"></i>Invitaciones Digitales</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-info fs-5"></i>Confirmación de Asistencia</li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-info fs-5"></i>Cuenta Regresiva & Mapas</li>
+                                <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill me-3 text-info fs-5"></i>Carrusel de fotos</li>
                             </ul>
                             
-                            <a href="#contact" class="btn btn-white w-100 rounded-pill fw-bold text-primary py-3 mt-auto">Crear Invitación</a>
+                            <a href="#contact" class="btn btn-accent-custom w-100 rounded-pill fw-bold py-3 mt-auto shadow-sm">Crear Invitación</a>
                         </div>
-                        <div class="blob-decoration blob-white"></div>
+                        <div class="blob-decoration blob-gold"></div>
                     </div>
                 </div>
             </div>
@@ -223,13 +234,13 @@
 
                 <!-- Email -->
                 <div class="col-md-4 animate-up delay-200">
-                    <a href="mailto:antonelawebdev@gmail.com" class="footer-card d-flex align-items-center p-4 rounded-4 text-decoration-none text-white bg-white-10 transition-all">
+                    <a href="mailto:monkaicode@gmail.com" class="footer-card d-flex align-items-center p-4 rounded-4 text-decoration-none text-white bg-white-10 transition-all">
                         <div class="icon-box-md bg-primary rounded-circle me-4 flex-shrink-0">
                             <i class="bi bi-envelope fs-4 text-white"></i>
                         </div>
                         <div>
                             <h5 class="fw-bold mb-1">Email</h5>
-                            <span class="small text-white-50">antonelawebdev@gmail.com</span>
+                            <span class="small text-white-50">monkaicode@gmail.com</span>
                         </div>
                         <i class="bi bi-arrow-right ms-auto opacity-0 arrow-anim"></i>
                     </a>
@@ -255,7 +266,7 @@
                     <img src="logo.png" alt="Monkai Logo" height="30" class="me-2 rounded-2 opacity-75">
                     <span class="fw-bold small tracking-wider">MONKAI STARTUP</span>
                 </div>
-                <p class="mb-0 small text-white-50">&copy; 2024 Todos los derechos reservados.</p>
+                <p class="mb-0 small text-white-50">&copy; Desarrollado por MONKAI - 2026 Todos los derechos reservados.</p>
             </div>
         </div>
         

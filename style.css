@@ -121,6 +121,36 @@ body {
     color: white;
 }
 
+.btn-secondary-custom {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #b04040;
+    /* Darker shade */
+    border-color: #b04040;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(205, 92, 92, 0.3);
+}
+
+.btn-accent-custom {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-dark);
+    transition: all 0.3s ease;
+}
+
+.btn-accent-custom:hover {
+    background-color: #e6c200;
+    /* Darker shade */
+    border-color: #e6c200;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+
 /* Navbar */
 .navbar-brand img {
     object-fit: cover;
@@ -440,6 +470,30 @@ body {
     box-shadow: 0 15px 40px 0 rgba(255, 140, 0, 0.1);
 }
 
+.glass-card-featured {
+    border: 1px solid rgba(255, 140, 0, 0.2);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 251, 240, 0.8));
+    box-shadow: 0 10px 30px -5px rgba(255, 140, 0, 0.15);
+}
+
+.blob-card-about {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 140, 0, 0.2) 0%, transparent 70%);
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.transition-icon {
+    transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .transition-icon {
+    transform: rotate(180deg);
+}
+
 .bento-grid-mini {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -548,6 +602,16 @@ body {
     color: var(--color-primary) !important;
 }
 
+.bg-secondary-subtle {
+    background-color: rgba(205, 92, 92, 0.1) !important;
+    color: var(--color-secondary) !important;
+}
+
+.bg-accent-subtle {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+    color: var(--color-accent) !important;
+}
+
 .backdrop-blur {
     backdrop-filter: blur(10px);
 }
@@ -602,6 +666,24 @@ body {
     background: rgba(255, 140, 0, 0.2);
     top: -100px;
     left: -100px;
+}
+
+.blob-red {
+    width: 250px;
+    height: 250px;
+    background: var(--color-secondary);
+    top: -80px;
+    right: -80px;
+    opacity: 0.2;
+}
+
+.blob-gold {
+    width: 250px;
+    height: 250px;
+    background: var(--color-accent);
+    top: -80px;
+    right: -80px;
+    opacity: 0.2;
 }
 
 /* Custom Solutions Banner */

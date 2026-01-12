@@ -175,4 +175,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // --- Read More Button Logic ---
+    const readMoreBtn = document.getElementById('read-more-btn');
+    const readMoreTextSpan = readMoreBtn ? readMoreBtn.querySelector('span') : null;
+
+    if (readMoreBtn && readMoreTextSpan) {
+        readMoreBtn.addEventListener('click', function () {
+            const isExpanded = readMoreBtn.getAttribute('aria-expanded') === 'true';
+            // The click happens BEFORE the bootstrap collapse toggles the state fully, 
+            // but aria-expanded is toggled by bootstrap. 
+            // Wait a tick or check current state. 
+            // Actually, we can just check the current text to decide the next text.
+
+            if (readMoreTextSpan.textContent.trim() === 'Leer más') {
+                readMoreTextSpan.textContent = 'Leer menos';
+            } else {
+                readMoreTextSpan.textContent = 'Leer más';
+            }
+        });
+    }
+
 });
